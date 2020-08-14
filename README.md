@@ -65,14 +65,14 @@ curl -w'\n' -H 'Content-Type: text/plain' localhost:8080 -d "Fun"
 
 ## Kubernetes Deployment and Service
 
-![Kubernetes](https://www.pngfind.com/pngs/m/487-4870857_kubernetes-logo-kubernetes-png-transparent-png.png)
+![Kubernetes](https://www.pngkit.com/png/detail/252-2523865_kubernetes-logo-transparent.png)
 
 You can containerize this template app and deploy it as a Deployment and Service on Kubernetes.
 See the [Spring Boot Kubernetes](https://spring.io/guides/gs/spring-boot-kubernetes/) Guyide for details.
 
 ## Knative Service
 
-<img src="knative-logo.png" alt="Knative Logo" width="150"/>
+![Knative Logo](knative-logo.png)
 
 You can containerize this template app and deploy it as a Knative Service.
 See the [Hello World - Spring Boot Java](https://knative.dev/docs/serving/samples/hello-world/helloworld-java-spring/) sample for details.
