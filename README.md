@@ -73,7 +73,7 @@ See the [Spring Boot Kubernetes](https://spring.io/guides/gs/spring-boot-kuberne
 
 ## Knative Service
 
-![Knative Logo](knative-logo.png)
+![Knative Logo](knative-logo.jpg)
 
 You can containerize this template app and deploy it as a Knative Service.
 See the [Hello World - Spring Boot Java](https://knative.dev/docs/serving/samples/hello-world/helloworld-java-spring/) sample for details.
