@@ -65,7 +65,7 @@ curl -w'\n' -H 'Content-Type: text/plain' localhost:8080 -d "Fun"
 
 ## Kubernetes Deployment and Service
 
-<img src="https://www.pngkit.com/png/detail/252-2523865_kubernetes-logo-transparent.png"
+<img src="https://kubernetes.io/images/kubernetes-horizontal-color.png"
      alt="Kubernetes" width="400" />
 
 You can containerize this template app and deploy it as a Deployment and Service on Kubernetes.
