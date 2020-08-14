@@ -66,8 +66,7 @@ curl -w'\n' -H 'Content-Type: text/plain' localhost:8080 -d "Fun"
 ## Kubernetes Deployment and Service
 
 <img src="https://www.pngkit.com/png/detail/252-2523865_kubernetes-logo-transparent.png"
-     alt="Kubernetes"
-     style="float: left; width: 500px;" />
+     alt="Kubernetes" width="400" />
 
 You can containerize this template app and deploy it as a Deployment and Service on Kubernetes.
 See the [Spring Boot Kubernetes](https://spring.io/guides/gs/spring-boot-kubernetes/) Guyide for details.
