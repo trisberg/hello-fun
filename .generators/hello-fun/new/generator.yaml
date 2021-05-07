@@ -1,0 +1,10 @@
+sources:
+  installFromRoot: true
+
+command:
+  options:
+    - name: include-Skaffold
+      description: Include a skaffold configuration file
+      dataType: boolean
+      defaultValue: false
+      inputType: toggle
