@@ -1,0 +1,27 @@
+accelerator:
+  displayName: Hello Fun
+  description: A simple Spring Cloud Function serverless app
+  iconUrl: https://raw.githubusercontent.com/simple-starters/icons/master/icon-cloud.png
+  tags:
+  - java
+  - spring
+  - cloud
+  - function
+  - serverless
+
+  # options for the UI
+  options:
+  - name: deploymentType
+    description: Type of deployment resource artifacts to generate
+    dataType: string
+    defaultValue: none
+    inputType: select
+    choices:
+      none: "No deployment artifacts"
+      knative: "Knative service resource"
+      kubernetes: "Kubernetes service and deployment resources"
+  - name: includeSkaffold
+    description: Include a skaffold configuration file
+    dataType: boolean
+    defaultValue: false
+    inputType: toggle
