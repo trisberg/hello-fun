@@ -11,6 +11,12 @@ accelerator:
 
   # options for the UI
   options:
+  - name: artifactId
+    description: artifactId
+    dataType: text
+    defaultValue: hello-fun
+    inputType: text
+    required: true
   - name: deploymentType
     description: Type of deployment resource artifacts to generate
     dataType: string
