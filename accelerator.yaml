@@ -37,3 +37,4 @@ accelerator:
     dataType: boolean
     defaultValue: false
     inputType: toggle
+    required: true
