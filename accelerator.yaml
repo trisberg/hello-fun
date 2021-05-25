@@ -17,6 +17,12 @@ accelerator:
     defaultValue: hello-fun
     inputType: text
     required: true
+  - name: artifactVersion
+    description: artifactVersion
+    dataType: text
+    defaultValue: 0.0.1-SNAPSHOT
+    inputType: text
+    required: true
   - name: deploymentType
     description: Type of deployment resource artifacts to generate
     dataType: string
