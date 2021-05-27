@@ -11,17 +11,31 @@ accelerator:
 
   # options for the UI
   options:
-  - name: deploymentType
-    description: Type of deployment resource artifacts to generate
+  - name: appName
+    description: Name of the app
     dataType: string
-    defaultValue: none
-    inputType: select
-    choices:
-      none: "No deployment artifacts"
-      knative: "Knative service resource"
-      kubernetes: "Kubernetes service and deployment resources"
+    defaultValue: hello-fun
+    inputType: text
   - name: includeSkaffold
     description: Include a skaffold configuration file
     dataType: boolean
     defaultValue: false
     inputType: toggle
+
+engine:
+  resources:
+    - name: yaml-config
+      includes: ["config/*.yaml"]
+      transformations:
+        replace:
+          - token: "{{artifactId}}"
+            with: '#appName'
+    - name: skaffold
+      includes: ["skaffold.yaml"]
+      conditional: #includeSkaffold
+      transformations:
+        replace:
+          - token: "{{artifactId}}"
+            with: '#appName'
+    - name: the-rest
+      includes: ["**"]

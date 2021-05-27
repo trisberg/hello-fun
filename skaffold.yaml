@@ -1,9 +1,4 @@
----
-actions:
-  to: skaffold.yaml
----
 apiVersion: skaffold/v2beta6
-conditional: {{includeSkaffold}}
 kind: Config
 metadata:
   name: {{artifactId}}
@@ -13,5 +8,5 @@ build:
 deploy:
   kubectl:
     manifests:
-    - kubernetes/service.yaml
-    - kubernetes/deployment.yaml
+    - config/service.yaml
+    - config/deployment.yaml
