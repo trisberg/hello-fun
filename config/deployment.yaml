@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app.kubernetes.io/name: {{artifactId}}
-  name: {{artifactId}}
+    app.kubernetes.io/name: {{appName}}
+  name: {{appName}}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: {{artifactId}}
+      app.kubernetes.io/name: {{appName}}
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: {{artifactId}}
-        app.kubernetes.io/part-of: {{artifactId}}
+        app.kubernetes.io/name: {{appName}}
+        app.kubernetes.io/part-of: {{appName}}
     spec:
       containers:
-      - image: {{artifactId}}:{{artifactVersion}}
+      - image: {{appName}}:latest
         imagePullPolicy: IfNotPresent
         livenessProbe:
           httpGet:

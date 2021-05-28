@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app.kubernetes.io/name: {{artifactId}}
-  name: {{artifactId}}
+    app.kubernetes.io/name: {{appName}}
+  name: {{appName}}
 spec:
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app.kubernetes.io/name: {{artifactId}}
+    app.kubernetes.io/name: {{appName}}
   sessionAffinity: None
   type: ClusterIP

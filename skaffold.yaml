@@ -1,10 +1,10 @@
 apiVersion: skaffold/v2beta6
 kind: Config
 metadata:
-  name: {{artifactId}}
+  name: {{appName}}
 build:
   artifacts:
-  - image: {{artifactId}}
+  - image: {{appName}}
 deploy:
   kubectl:
     manifests:
