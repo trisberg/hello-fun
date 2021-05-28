@@ -8,5 +8,5 @@ build:
 deploy:
   kubectl:
     manifests:
-    - config/service.yaml
-    - config/deployment.yaml
+    - kubernetes/service.yaml
+    - kubernetes/deployment.yaml

@@ -32,8 +32,8 @@ engine:
             with: '#projectName'
           - token: "Demo of a Spring Cloud Function"
             with: '#projectDescription'
-    - name: config-yaml
-      includes: ["config/*.yaml"]
+    - name: kubernetes-yaml
+      includes: ["kubernetes/*.yaml"]
       transformations:
         replace:
           - token: "{{appName}}"
