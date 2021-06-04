@@ -44,7 +44,7 @@ engine:
       transformations:
         replace:
           - token: "{{appName}}"
-            with: '#appName' 
+            with: '#appName'
     - name: no-skaffold
       excludes: ["skaffold.yaml"]
     - name: the-rest
