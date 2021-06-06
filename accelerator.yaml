@@ -45,6 +45,8 @@ engine:
         replace:
           - token: "{{appName}}"
             with: '#appName'
+    - name: no-skaffold
+      includes: ["skaffold.yaml"]
+      excludes: ["skaffold.yaml"]
     - name: the-rest
       includes: ["**"]
-      excludes: ["skaffold.yaml"]
