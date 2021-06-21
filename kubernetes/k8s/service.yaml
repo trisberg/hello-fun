@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app.kubernetes.io/name: {{appName}}
-  name: {{appName}}
+    app.kubernetes.io/name: hello-fun
+  name: hello-fun
 spec:
   ports:
   - port: 80
     targetPort: 8080
   selector:
-    app.kubernetes.io/name: {{appName}}
+    app.kubernetes.io/name: hello-fun
   sessionAffinity: None
-  type: ClusterIP
+  type: NodePort

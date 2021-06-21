@@ -1,10 +1,10 @@
-apiVersion: skaffold/v2beta6
+apiVersion: skaffold/v2beta15
 kind: Config
 metadata:
-  name: {{appName}}
+  name: hello-fun
 build:
   artifacts:
-  - image: {{appName}}
+  - image: hello-fun
 deploy:
   kubectl:
     manifests:
